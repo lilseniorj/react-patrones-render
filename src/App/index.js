@@ -70,13 +70,12 @@ function App() {
           <TodoItem
             key={todo.text}
             text={todo.text}
-            completed={todo.complete}
+            completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
           />
         )}
       </TodoList>
-
 
       {!!openModal && (
         <Modal>
